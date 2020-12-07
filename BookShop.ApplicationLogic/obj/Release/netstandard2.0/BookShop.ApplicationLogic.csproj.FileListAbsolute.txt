@@ -1,0 +1,9 @@
+C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\bin\Release\netstandard2.0\BookShop.ApplicationLogic.deps.json
+C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\bin\Release\netstandard2.0\BookShop.ApplicationLogic.dll
+C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\bin\Release\netstandard2.0\BookShop.ApplicationLogic.pdb
+C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\obj\Release\netstandard2.0\BookShop.ApplicationLogic.AssemblyInfoInputs.cache
+C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\obj\Release\netstandard2.0\BookShop.ApplicationLogic.AssemblyInfo.cs
+C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\obj\Release\netstandard2.0\BookShop.ApplicationLogic.csproj.CoreCompileInputs.cache
+C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\obj\Release\netstandard2.0\BookShop.ApplicationLogic.dll
+C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\obj\Release\netstandard2.0\BookShop.ApplicationLogic.pdb
+C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\obj\Release\netstandard2.0\BookShop.ApplicationLogic.csprojAssemblyReference.cache

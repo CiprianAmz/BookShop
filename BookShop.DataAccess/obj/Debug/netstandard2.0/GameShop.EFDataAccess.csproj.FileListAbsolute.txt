@@ -1,0 +1,24 @@
+C:\Users\traia\source\repos\GameShop\GameShop.DataAccess\bin\Debug\netstandard2.0\GameShop.EFDataAccess.deps.json
+C:\Users\traia\source\repos\GameShop\GameShop.DataAccess\bin\Debug\netstandard2.0\GameShop.EFDataAccess.dll
+C:\Users\traia\source\repos\GameShop\GameShop.DataAccess\bin\Debug\netstandard2.0\GameShop.EFDataAccess.pdb
+C:\Users\traia\source\repos\GameShop\GameShop.DataAccess\bin\Debug\netstandard2.0\GameShop.ApplicationLogic.dll
+C:\Users\traia\source\repos\GameShop\GameShop.DataAccess\bin\Debug\netstandard2.0\GameShop.ApplicationLogic.pdb
+C:\Users\traia\source\repos\GameShop\GameShop.DataAccess\obj\Debug\netstandard2.0\GameShop.EFDataAccess.csprojAssemblyReference.cache
+C:\Users\traia\source\repos\GameShop\GameShop.DataAccess\obj\Debug\netstandard2.0\GameShop.EFDataAccess.AssemblyInfoInputs.cache
+C:\Users\traia\source\repos\GameShop\GameShop.DataAccess\obj\Debug\netstandard2.0\GameShop.EFDataAccess.AssemblyInfo.cs
+C:\Users\traia\source\repos\GameShop\GameShop.DataAccess\obj\Debug\netstandard2.0\GameShop.EFDataAccess.csproj.CopyComplete
+C:\Users\traia\source\repos\GameShop\GameShop.DataAccess\obj\Debug\netstandard2.0\GameShop.EFDataAccess.dll
+C:\Users\traia\source\repos\GameShop\GameShop.DataAccess\obj\Debug\netstandard2.0\GameShop.EFDataAccess.pdb
+C:\Users\traia\source\repos\GameShop\GameShop.DataAccess\obj\Debug\netstandard2.0\GameShop.EFDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.DataAccess\bin\Debug\netstandard2.0\GameShop.EFDataAccess.deps.json
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.DataAccess\bin\Debug\netstandard2.0\GameShop.EFDataAccess.dll
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.DataAccess\bin\Debug\netstandard2.0\GameShop.EFDataAccess.pdb
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.DataAccess\bin\Debug\netstandard2.0\GameShop.ApplicationLogic.dll
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.DataAccess\bin\Debug\netstandard2.0\GameShop.ApplicationLogic.pdb
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.DataAccess\obj\Debug\netstandard2.0\GameShop.EFDataAccess.csprojAssemblyReference.cache
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.DataAccess\obj\Debug\netstandard2.0\GameShop.EFDataAccess.AssemblyInfoInputs.cache
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.DataAccess\obj\Debug\netstandard2.0\GameShop.EFDataAccess.AssemblyInfo.cs
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.DataAccess\obj\Debug\netstandard2.0\GameShop.EFDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.DataAccess\obj\Debug\netstandard2.0\GameShop.EFDataAccess.csproj.CopyComplete
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.DataAccess\obj\Debug\netstandard2.0\GameShop.EFDataAccess.dll
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.DataAccess\obj\Debug\netstandard2.0\GameShop.EFDataAccess.pdb

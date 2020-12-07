@@ -1,0 +1,57 @@
+﻿@model BookShop.Models.Users.UserMainBookViewModel;
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{
+    ViewData["Title"] = "ViewBook";
+}
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body>
+
+    <div>
+        <div>
+            <img src="data:image/png;base64, @Model.Book.ImageFile" width="350" height="500" alt="" class="center" />
+        </div>
+        <div class="product-caption">
+            <h4 align="center" style="color:black">@Model.Book.Name </h4>
+            <h4 align="center" style="color:black">@Model.Book.Price $ </h4>
+            <h4 align="center" style="color:black">Average ratings: @Model.Rating  </h4>
+        </div>
+        @if (User.IsInRole("User") || User.IsInRole("Admin"))
+        {
+
+            <h4 align="center">
+                <a align="center" class="btn btn-danger" asp-controller="User" asp-action="AddComment" asp-route-id="@Model.Book.Id">AddComm  </a>
+                <a align="center" class="btn btn-danger" asp-controller="User" asp-action="AddRating" asp-route-id="@Model.Book.Id">Rate Book   </a>
+                <a align="center" class="btn btn-danger" asp-action="AddOrder" asp-route-id="@Model.Book.Id">Order    </a>
+            </h4>
+        }
+    </div>
+    <div class="border border-dark" style="background-color:white">
+        @foreach (var comment in Model.Comments)
+        {
+
+
+            
+        <div class="product-caption" align="justify" style="border-bottom-style:groove;border-top-style:groove">
+            <h5 align="left" class="badge-secondary">@comment.Username : </h5><h4>@comment.Comm</h4>
+
+            @if (comment.UserId.ToString() == UserManager.GetUserId(User))
+            {
+                <a align="right" class="btn btn-danger" asp-controller="User" asp-action="" asp-route-id="@Model.Book.Id">Delete</a>
+
+            }
+        </div>
+          }
+    </div>
+
+    <a class="btn btn-danger" asp-action="Index">Back to List</a>
+</body>
+
+

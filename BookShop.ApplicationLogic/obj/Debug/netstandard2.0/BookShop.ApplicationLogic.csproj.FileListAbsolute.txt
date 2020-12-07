@@ -1,0 +1,35 @@
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.deps.json
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.AssemblyInfoInputs.cache
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.AssemblyInfo.cs
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.csproj.CoreCompileInputs.cache
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
+C:\Users\traia\source\repos\GameShop - Copy\GameShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.deps.json
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.csprojAssemblyReference.cache
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.AssemblyInfoInputs.cache
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.AssemblyInfo.cs
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.csproj.CoreCompileInputs.cache
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
+C:\Users\traia\source\repos\BookShop\BookShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.deps.json
+C:\Users\traia\source\repos\BookShop\BookShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
+C:\Users\traia\source\repos\BookShop\BookShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
+C:\Users\traia\source\repos\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.AssemblyInfoInputs.cache
+C:\Users\traia\source\repos\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.AssemblyInfo.cs
+C:\Users\traia\source\repos\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.csproj.CoreCompileInputs.cache
+C:\Users\traia\source\repos\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
+C:\Users\traia\source\repos\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
+C:\Users\traia\source\repos\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.csprojAssemblyReference.cache
+C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.deps.json
+C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
+C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
+C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.AssemblyInfoInputs.cache
+C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.AssemblyInfo.cs
+C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.csproj.CoreCompileInputs.cache
+C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
+C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
+C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.csprojAssemblyReference.cache

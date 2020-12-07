@@ -1,0 +1,36 @@
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.EFDataAccess.deps.json
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.EFDataAccess.dll
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.EFDataAccess.pdb
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.csprojAssemblyReference.cache
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.AssemblyInfoInputs.cache
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.AssemblyInfo.cs
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.csproj.CopyComplete
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.dll
+C:\Users\traia\source\repos\GameShop - Copy\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.pdb
+C:\Users\traia\source\repos\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.csprojAssemblyReference.cache
+C:\Users\traia\source\repos\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.AssemblyInfoInputs.cache
+C:\Users\traia\source\repos\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.AssemblyInfo.cs
+C:\Users\traia\source\repos\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\traia\source\repos\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.EFDataAccess.deps.json
+C:\Users\traia\source\repos\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.EFDataAccess.dll
+C:\Users\traia\source\repos\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.EFDataAccess.pdb
+C:\Users\traia\source\repos\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
+C:\Users\traia\source\repos\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
+C:\Users\traia\source\repos\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.csproj.CopyComplete
+C:\Users\traia\source\repos\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.dll
+C:\Users\traia\source\repos\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.pdb
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.EFDataAccess.deps.json
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.EFDataAccess.dll
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.EFDataAccess.pdb
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.csprojAssemblyReference.cache
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.AssemblyInfoInputs.cache
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.AssemblyInfo.cs
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.csproj.CopyComplete
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.dll
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.pdb

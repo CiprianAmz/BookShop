@@ -1,0 +1,12 @@
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\bin\Release\netstandard2.0\BookShop.EFDataAccess.deps.json
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\bin\Release\netstandard2.0\BookShop.EFDataAccess.dll
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\bin\Release\netstandard2.0\BookShop.EFDataAccess.pdb
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\bin\Release\netstandard2.0\BookShop.ApplicationLogic.dll
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\bin\Release\netstandard2.0\BookShop.ApplicationLogic.pdb
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\obj\Release\netstandard2.0\BookShop.EFDataAccess.csprojAssemblyReference.cache
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\obj\Release\netstandard2.0\BookShop.EFDataAccess.AssemblyInfoInputs.cache
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\obj\Release\netstandard2.0\BookShop.EFDataAccess.AssemblyInfo.cs
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\obj\Release\netstandard2.0\BookShop.EFDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\obj\Release\netstandard2.0\BookShop.EFDataAccess.csproj.CopyComplete
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\obj\Release\netstandard2.0\BookShop.EFDataAccess.dll
+C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\obj\Release\netstandard2.0\BookShop.EFDataAccess.pdb

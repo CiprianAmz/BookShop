@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\traia\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\traia\\.nuget\\packages"
+    ]
+  }
+}
