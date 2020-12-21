@@ -12,20 +12,18 @@
     <div class="row">
         @foreach (var order in Model.Orders)
         {
-            <div class="col-xl-4 col-lg-4 col-md-6" style="border-style: groove;background-color:white;shape-outside">
-                    <div class="product-caption">
-                        <h4 align="left">Date: @order.Date.ToShortDateString()</h4>
-                        <h4 align="left">TotalValue: @order.TotalValue </h4>
-                        @foreach (var Book in Model.Books)
-                        {
-                            @if (Book.Id == order.BookId)
-                            {
-                                <h4 align="left">Product: @Book.Name</h4>
-                            }
-                        }
-                    </div>
+        <div class="product-caption">
+            @foreach (var Book in Model.Books)
+            {
+                @if ((Book.Id == order.BookId) && (Book.Id.ToString() != "08b78362-f32e-42a8-8838-8e4c39fd3c30"))
+                {
+                    <img src="data:image/png;base64, @Book.ImageFile" width="350" height="500" alt="" class="center" />
+                    <h4 align="center"><a style="color:white" asp-controller="User" asp-action="ViewBook" asp-route-id="@Book.Id">@Book.Name </a></h4>
+                    <a class="btn btn-danger" asp-controller="User" asp-action="DeleteOrder" asp-route-id="@order.Id">Delete Wish</a>
+                }
+            }
+        </div>
 
-            </div>
         }
     </div>
 </body>

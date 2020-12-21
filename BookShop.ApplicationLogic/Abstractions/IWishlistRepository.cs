@@ -4,9 +4,8 @@ using System.Text;
 using BookShop.ApplicationLogic.Model;
 namespace BookShop.ApplicationLogic.Abstractions
 {
-    public interface IBookRepository : IRepository<Book>
+    public interface IWishlistRepository : IRepository<Wishlist>
     {
-        Book GetBookbyId(Guid BookId);
-        Book GetBookList();
+
     }
 }

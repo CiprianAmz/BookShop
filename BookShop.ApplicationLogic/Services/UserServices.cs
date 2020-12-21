@@ -17,22 +17,29 @@ namespace BookShop.ApplicationLogic.Services
         private ICommentRepository commentRepository;
         private IOrderRepository orderRepository;
         private IRatingRepository ratingRepository;
+        private IWishlistRepository wishlistRepository;
         SignInManager<IdentityUser> signInManager;
         UserManager<IdentityUser> userManager;
         
 
-        public UserServices(IUserRepository userRepository, IBookRepository BookRepository, ICommentRepository commentRepository, IOrderRepository orderRepository, IRatingRepository ratingRepository)
+        public UserServices(IUserRepository userRepository, IBookRepository BookRepository, ICommentRepository commentRepository, IOrderRepository orderRepository, IRatingRepository ratingRepository, IWishlistRepository wishlistRepository)
         {
             this.userRepository = userRepository;
             this.BookRepository = BookRepository;
             this.commentRepository = commentRepository;
             this.orderRepository = orderRepository;
-            this.ratingRepository = ratingRepository;           
+            this.ratingRepository = ratingRepository;
+            this.wishlistRepository = wishlistRepository;
         }
 
         public IEnumerable<Book> GetBookList()
         {
             return BookRepository.GetAll();
+        }
+
+        public IEnumerable<Book> GetBookByCategory( string category)
+        {
+            return BookRepository.GetBookByCategory(category);
         }
 
         public IEnumerable<Order> GetOrderById(string orderId)
@@ -43,6 +50,15 @@ namespace BookShop.ApplicationLogic.Services
                 throw new Exception("Invalid Guid Format");
             }
             return orderRepository.GetOrderByUserId(orderIdGuid);
+        }
+        public Order GetOrderId(string orderId)
+        {
+            Guid orderIdGuid = Guid.Empty;
+            if (!Guid.TryParse(orderId, out orderIdGuid))
+            {
+                throw new Exception("Invalid Guid Format");
+            }
+            return orderRepository.GetOrderByOrdeId(orderIdGuid);
         }
 
         public IEnumerable<Book> GetBookbyId(string BookId)
@@ -86,6 +102,38 @@ namespace BookShop.ApplicationLogic.Services
                 BookId = Book.Id
 
             }) ; 
+
+        }
+        public void deleteOrder( string orderId)
+        {
+
+            var order = GetOrderId(orderId);
+
+            if (order == null)
+            {
+       
+            }
+       
+            orderRepository.Delete(order);
+
+        }
+        public void addWish(String userId, Guid BookId)
+        {
+            Guid userIdGuid = Guid.Empty;
+            if (!Guid.TryParse(userId, out userIdGuid))
+            {
+                throw new Exception("Invalid Guid Format");
+            }
+            var user = userRepository.GetUserById(userIdGuid);
+            var Book = BookRepository.GetBookbyId(BookId);
+
+            wishlistRepository.Add(new Wishlist()
+            {
+                Id = Guid.NewGuid(),
+                UserId = user.Id,
+                BookId = Book.Id
+
+            });
 
         }
 

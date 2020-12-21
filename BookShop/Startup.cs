@@ -48,6 +48,7 @@ namespace BookShop
             services.AddScoped<ICommentRepository, DataAccess.CommentRepository>();
             services.AddScoped<IRatingRepository, RatingRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
+            services.AddScoped<IWishlistRepository, WishlistRepository>();
             services.AddScoped<AdminServices>();
             services.AddScoped<UserServices>();
             services.AddControllersWithViews();

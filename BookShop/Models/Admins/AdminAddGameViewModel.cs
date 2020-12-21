@@ -18,5 +18,7 @@ namespace BookShop.Models.Admins
         public string Description { get; set; }
         [DisplayName("Upload File")]
         public IFormFile ImageFile { get; set; }
+        public int Stock { get; set; }
+        public string Category { get; set; }
     }
 }

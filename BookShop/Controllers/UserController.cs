@@ -41,19 +41,69 @@ namespace BookShop.Controllers
             return View(BookVM);
         }
 
+        public IActionResult DeleteOrder([FromRoute] string id)
+        {
+          
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            userServices.deleteOrder(id);
+            return Redirect(Url.Action("Index", "Admin"));
+        }
+
         public ActionResult Index()
         {
             try
+            {        
+                    var BookList = userServices.GetBookList();
+                    return View(new UserBookViewModel { Books = BookList });
+
+            }
+            catch (Exception)
             {
-                //var userId = userManager.GetUserId(User);
-                //if (userId == null)
-                //{
-                //    return BadRequest("Null");
-                //}           
+                return BadRequest("aici se blocheaza");
+            }
+        }
+ 
+        public ActionResult ViewBooksFiction()
+        {
+            try
+            {
+                string cat = "Fiction";
+                    var BookList = userServices.GetBookByCategory(cat);
+                    return View(new UserBookViewModel { Books = BookList });  
 
-                var BookList = userServices.GetBookList();
+            }
+            catch (Exception)
+            {
+                return BadRequest("aici se blocheaza");
+            }
+        }
 
-                return View(new UserBookViewModel {Books = BookList });
+        public ActionResult ViewBooksScience()
+        {
+            try
+            {
+                string cat = "Science";
+                var BookList = userServices.GetBookByCategory(cat);
+                return View(new UserBookViewModel { Books = BookList });
+
+            }
+            catch (Exception)
+            {
+                return BadRequest("aici se blocheaza");
+            }
+        }
+        public ActionResult ViewBooksNonFiction()
+        {
+            try
+            {
+                string cat = "NonFiction";
+                var BookList = userServices.GetBookByCategory(cat);
+                return View(new UserBookViewModel { Books = BookList });
+
             }
             catch (Exception)
             {
@@ -171,7 +221,30 @@ namespace BookShop.Controllers
 
         }
 
-       
+        [HttpPost]
+        public IActionResult AddWish([FromForm] AddOrderModelView model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            var userId = userManager.GetUserId(User);
+            userServices.addWish(userId, model.BookId);
+            return RedirectToAction("Index");
+            // return Redirect(Url.Action("Index", "Admin"));
+        }
+
+        [HttpGet]
+        public IActionResult AddWish([FromRoute] string id)
+        {
+            var Book = userServices.GetBookbyId(id).Single();
+            var BookVM = new AddWishModelView { BookId = Book.Id };
+            return View(BookVM);
+
+        }
+
+
 
 
     }

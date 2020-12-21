@@ -21,7 +21,7 @@ namespace BookShop.EFDataAccess
             return dbContext.Orders.Where(a => a.BookId == BookId).AsEnumerable();
         }
 
-        public Order GetOrderByOrdeId(Guid orderId, User user)
+        public Order GetOrderByOrdeId(Guid orderId)
         {
             return dbContext.Orders.Where(a => a.Id == orderId).FirstOrDefault();
         }

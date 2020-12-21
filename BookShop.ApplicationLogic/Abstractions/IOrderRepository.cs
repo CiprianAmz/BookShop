@@ -6,7 +6,7 @@ namespace BookShop.ApplicationLogic.Abstractions
 {
     public interface IOrderRepository : IRepository<Order>
     {
-        Order GetOrderByOrdeId(Guid orderId, User user);
+        Order GetOrderByOrdeId(Guid orderId);
         IEnumerable<Order> GetOrderByUserId(Guid userId);
         IEnumerable<Order> GetOrderByBookId(Guid BookId);
     }

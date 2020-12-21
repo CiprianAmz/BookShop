@@ -741,3 +741,11 @@ C:\Users\Ciprian\Desktop\BookShop\BookShop\obj\Debug\netcoreapp3.1\staticwebasse
 C:\Users\Ciprian\Desktop\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.dll
 C:\Users\Ciprian\Desktop\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.pdb
 C:\Users\Ciprian\Desktop\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.genruntimeconfig.cache
+C:\Users\Ciprian\Desktop\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AddBook1.cshtml.g.cs
+C:\Users\Ciprian\Desktop\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\OutOfStock.cshtml.g.cs
+C:\Users\Ciprian\Desktop\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\User\AddWishlist.cshtml.g.cs
+C:\Users\Ciprian\Desktop\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\User\DeleteOrder.cshtml.g.cs
+C:\Users\Ciprian\Desktop\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\User\ViewWishlist.cshtml.g.cs
+C:\Users\Ciprian\Desktop\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\User\ViewBooksFiction.cshtml.g.cs
+C:\Users\Ciprian\Desktop\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\User\ViewBooksNonFiction.cshtml.g.cs
+C:\Users\Ciprian\Desktop\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\User\ViewBooksScience.cshtml.g.cs

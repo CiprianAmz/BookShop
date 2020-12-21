@@ -1,0 +1,24 @@
+﻿@model BookShop.Models.Users.AddWishModelView;
+@{
+    ViewData["Title"] = "Wishlist";
+}
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+
+        <form asp-action="AddWishlist">
+            <input type="hidden" asp-for="BookId" />
+            <input type="hidden" asp-for="UserId" />
+            <div class="form-group">
+                <h4>You will receive a confirmation  email after you complete the order</h4>
+                <input type="submit" value="Complete Order" class="btn btn-primary" />
+            </div>
+        </form>
+
+    </div>
+</body>

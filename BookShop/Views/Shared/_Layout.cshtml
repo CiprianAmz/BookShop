@@ -22,18 +22,28 @@
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="User" asp-action="Index">Books</a>
+                        <li class="nav-item dropdown active text-light">
+                            <a class="nav-link dropdown-toggle text-light" href="servicii.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Category
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" asp-area="" asp-controller="User" asp-action="Index">All</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="User" asp-action="ViewBooksFiction">Fiction</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="User" asp-action="ViewBooksScience">Science</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="User" asp-action="ViewBooksNonFiction">NonFiction</a>
+                            </div>
                         </li>
                         @if (User.IsInRole("Admin"))
                         {
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Admin" asp-action="OutOfStock">Out of stock Books</a>
+                            </li>
                         }
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+
+
                     </ul>
                 </div>
             </div>

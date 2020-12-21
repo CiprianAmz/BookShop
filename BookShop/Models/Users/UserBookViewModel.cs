@@ -8,6 +8,7 @@ namespace BookShop.Models.Users
     public class UserBookViewModel
     {
         public IEnumerable<Book> Books { get; set; }
+        public string category { get; set; }
 
     }
 }

@@ -22,5 +22,10 @@ namespace BookShop.EFDataAccess
         {
             throw new NotImplementedException();
         }
+
+        public IEnumerable<Book> GetBookByCategory( string category)
+        {
+            return dbContext.Books.Where(a => a.Category == category).AsEnumerable();
+        }
     }
 }

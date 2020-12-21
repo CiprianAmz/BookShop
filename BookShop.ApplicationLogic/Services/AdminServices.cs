@@ -16,13 +16,15 @@ namespace BookShop.ApplicationLogic.Services
         private ICommentRepository commentRepository;
         private IOrderRepository orderRepository;
         private IRatingRepository ratingRepository;
+        private IWishlistRepository wishlistRepository;
 
         public AdminServices(IAdminRepository adminRepository,
                              IBookRepository BookRepository,
                              IUserRepository userRepository,
                              ICommentRepository commentRepository,
                              IOrderRepository orderRepository,
-                             IRatingRepository ratingRepository
+                             IRatingRepository ratingRepository,
+                             IWishlistRepository wishlistRepository
                             )
         { 
             this.BookRepository = BookRepository;
@@ -31,7 +33,7 @@ namespace BookShop.ApplicationLogic.Services
             this.commentRepository = commentRepository;
             this.orderRepository = orderRepository;
             this.ratingRepository = ratingRepository;
-
+            this.wishlistRepository = wishlistRepository;
         }
         public Admin GetAdminByAdminId(string userId)
         {
@@ -68,7 +70,7 @@ namespace BookShop.ApplicationLogic.Services
 
         }
 
-        public void addBook(String userId, String BookName, float BookPrice, String BookDescription, String Image)
+        public void addBook(String userId, String BookName, float BookPrice, String BookDescription, String Image, int BookStock, string category)
         {
             Guid userIdGuid = Guid.Empty;
             if (!Guid.TryParse(userId, out userIdGuid))
@@ -88,7 +90,9 @@ namespace BookShop.ApplicationLogic.Services
                 Name = BookName,
                 Price = BookPrice,
                 Description = BookDescription,
-                ImageFile = Image
+                ImageFile = Image,
+                Stock = BookStock,
+                Category = category
             }) ;
 
 
@@ -113,48 +117,11 @@ namespace BookShop.ApplicationLogic.Services
             {
                 throw new EntityNotFoundException(userIdGuid);
             }
-            Guid DummyId = Guid.Empty;
-
-
-            var comments = commentRepository.GetCommentByBookId(BookId).ToList();
-            var orders = orderRepository.GetOrderByBookId(BookId).ToList();
-            var ratings = ratingRepository.GetRatingByBookId(BookId).ToList();
-            if (comments != null)
-            {
-                foreach (var comment in comments)
-                {
-                    commentRepository.Delete(comment);
-                }
-            }
-            if (orders != null)
-            {
-                foreach (var order in orders)
-                {
-                    order.BookId = Guid.Empty;
-                    orderRepository.Update(order);
-                    //orderRepository.Add(new Order()
-                    //{                    
-                    //    Id = order.Id,
-                    //    User = order.User,
-                    //    Date = order.Date,
-                    //    TotalValue = order.TotalValue,
-                    //    BookId = DummyId
-                    //});
-                }
-
-                if (ratings != null)
-                {
-                    foreach (var rating in ratings)
-                    {
-                        ratingRepository.Delete(rating);
-                    }
-                }
-
-                BookRepository.Delete(Book);
+            Book.Stock = 0;
+            BookRepository.Update(Book);
 
             }
-        }
-        public void editBook(String userId, Guid BookId , String BookName, float Price, String BookDescription)
+        public void editBook(String userId, Guid BookId , String BookName, float Price, String BookDescription, int Stock, string category)
         {
             Guid userIdGuid = Guid.Empty;
             if (!Guid.TryParse(userId, out userIdGuid))
@@ -177,10 +144,13 @@ namespace BookShop.ApplicationLogic.Services
             Book.Name = BookName;
             Book.Price = Price;
             Book.Description = BookDescription;
-
+            Book.Stock = Stock;
+            Book.Category = category;
             BookRepository.Update(Book);
 
         }
+        
+
 
     }
 }

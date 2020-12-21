@@ -48,7 +48,29 @@ namespace BookShop.Controllers
             }
             catch (Exception)
             {
-                return BadRequest("issue found!");
+                return BadRequest("aici se blocheaza");
+            }
+        }
+
+        public ActionResult OutOfStock()
+        {
+            try
+            {
+                var userId = userManager.GetUserId(User);
+                if (userId == null)
+                {
+                    return BadRequest("Null");
+                }
+
+                var admin = adminServices.GetAdminByAdminId(userId);
+
+                var BookList = adminServices.GetBookList();
+
+                return View(new AdminBooksViewModel { Admin = admin, Books = BookList });
+            }
+            catch (Exception)
+            {
+                return BadRequest("aici se blocheaza");
             }
         }
 
@@ -60,11 +82,6 @@ namespace BookShop.Controllers
             {
                 return BadRequest();
             }
-            //string fileName = System.IO.Path.GetFileNameWithoutExtension(model.ImageFile.FileName);
-            //string externsion = System.IO.Path.GetExtension(model.ImageFile.FileName);
-            //fileName = fileName = DateTime.Now.ToString("yymmssfff") + externsion;
-            //var path = "~/BookImage/" +fileName;
-            //fileName = System.IO.Path.Combine (System.Web.Hosting.HostingEnvironment.MapPath);
             string image = "";
             if (!ModelState.IsValid)
             {
@@ -77,16 +94,15 @@ namespace BookShop.Controllers
             }
 
             var userId = userManager.GetUserId(User);
-            adminServices.addBook(userId, model.Name, model.Price, model.Description, image);
+            adminServices.addBook(userId, model.Name, model.Price, model.Description, image, model.Stock, model.Category);
             return RedirectToAction("Index");
-            // return Redirect(Url.Action("AddBook", "Admin"));
+ 
 
         }
         [HttpGet]
         public IActionResult AddBook([FromRoute] Book Book)
         {
-           // var Book = adminServices.GetBookbyId(id).Single();
-            var BookVM = new AdminAddBookViewModel { Name = Book.Name, Price = Book.Price, Description = Book.Description };
+            var BookVM = new AdminAddBookViewModel { Name = Book.Name, Price = Book.Price, Description = Book.Description, Stock = Book.Stock, Category = Book.Category};
             return View(BookVM);
 
         }
@@ -125,7 +141,7 @@ namespace BookShop.Controllers
 
             var userId = userManager.GetUserId(User);
 
-            adminServices.editBook(userId, model.Id, model.Name, model.Price, model.Description);
+            adminServices.editBook(userId, model.Id, model.Name, model.Price, model.Description, model.Stock, model.Category);
             return RedirectToAction("Index");
             // return Redirect(Url.Action("Index", "Admin"));
         }
@@ -134,7 +150,7 @@ namespace BookShop.Controllers
         public IActionResult EditBook([FromRoute]string id)
         {
             var Book = adminServices.GetBookbyId(id).Single();
-            var BookVM = new AdminEditBookView { Id = Book.Id, Name = Book.Name, Price = Book.Price, Description = Book.Description };
+            var BookVM = new AdminEditBookView { Id = Book.Id, Name = Book.Name, Price = Book.Price, Description = Book.Description, Stock = Book.Stock, Category = Book.Category };
             return View(BookVM);
 
         }

@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace BookShop.Models.Users
 {
-    public class UserMainBookViewModel
+    public class ViewWishlist
     {
-        public Book Book { get; set; }
-        public IEnumerable<Comment> Comments { get; set; }
-        public float Rating { get; set; }
+        public IEnumerable<Order> Orders { get; set; }
+        public IEnumerable<Book> Books { get; set; }
     }
 }

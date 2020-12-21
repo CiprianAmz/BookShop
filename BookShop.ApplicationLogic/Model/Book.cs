@@ -17,7 +17,9 @@ namespace BookShop.ApplicationLogic.Model
         public string Name { get; set; }
         public float Price { get; set; }
         public String Description { get; set; }
+        public int Stock { get; set; }
         public string ImageFile { get;set; }
+        public string Category { get; set; }
 
     }
 }
