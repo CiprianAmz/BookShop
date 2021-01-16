@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ri6eEln4yDCMVKADOdbFBlEvSKRHye6MoRnXJPdre1WccV0snoSqsTLQ7Nk5nTSZ3n3NWI0NepUuOmn6BA9ZXQ==",
+  "dgSpecHash": "X3M1jrrPon2Z7DpceUYDYLS/XhqmG/7EIw3UFxUJBKqsVqUEl4tnQ6uobzHVmF8M3Bc7LguXXV8iU/4NB2anmQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj",
+  "projectFilePath": "F:\\FacultyProjects\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ciprian\\.nuget\\packages\\entityframework\\6.1.0\\entityframework.6.1.0.nupkg.sha512",
     "C:\\Users\\Ciprian\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",

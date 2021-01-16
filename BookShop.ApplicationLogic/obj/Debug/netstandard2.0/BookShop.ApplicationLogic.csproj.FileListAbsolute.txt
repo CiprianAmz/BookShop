@@ -33,3 +33,12 @@ C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandar
 C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
 C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
 C:\Users\Ciprian\Desktop\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.csprojAssemblyReference.cache
+F:\FacultyProjects\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.csprojAssemblyReference.cache
+F:\FacultyProjects\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.AssemblyInfoInputs.cache
+F:\FacultyProjects\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.AssemblyInfo.cs
+F:\FacultyProjects\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.csproj.CoreCompileInputs.cache
+F:\FacultyProjects\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
+F:\FacultyProjects\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
+F:\FacultyProjects\BookShop\BookShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.deps.json
+F:\FacultyProjects\BookShop\BookShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
+F:\FacultyProjects\BookShop\BookShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb

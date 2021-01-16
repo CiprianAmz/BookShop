@@ -1,0 +1,31 @@
+﻿@model BookShop.Models.Users.ViewCart
+@{
+    ViewData["Title"] = "ViewOrders";
+}
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body >
+    <div class="row">
+        @foreach (var order in Model.Orders)
+        {
+        <div class="product-caption">
+            @foreach (var Books in Model.Books)
+            {
+                @if ((Books.Id == order.BookId) && (Books.Id.ToString() != "08b78362-f32e-42a8-8838-8e4c39fd3c30"))
+                {
+                    <img src="data:image/png;base64, @Books.ImageFile" width="350" height="500" alt="" class="center" />
+                    <h4 align="center"><a style="color:white" asp-controller="User" asp-action="ViewBooks" asp-route-id="@Books.Id">@Books.Name </a></h4>
+                    <a class="btn btn-danger" asp-controller="User" asp-action="DeleteCart" asp-route-id="@order.Id">Rremove from cart</a>
+                    <a class="btn btn-danger" asp-controller="User" asp-action="AddBill" asp-route-id="@Books.Id">Checkout</a>
+
+                }
+            }
+        </div>
+
+        }
+    </div>
+</body>

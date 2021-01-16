@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N1t+TDs7BgMK9tps3eFuYTm3Wm0Wvj2Pek4YXsR4TSMvyqd7WkfTscdfc/wP1AGsOz/VooWy8PeU21sAHQxa5A==",
+  "dgSpecHash": "PpINqkmHVRfTCJdAgctza3zmSwhOhCCVk/lo/ELrI02wEJdsicvp0MzolXP3/mkwijoJXmsF9sw16zv8N7wFXA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop\\BookShop.csproj",
+  "projectFilePath": "F:\\FacultyProjects\\BookShop\\BookShop\\BookShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ciprian\\.nuget\\packages\\documentformat.openxml\\2.10.1\\documentformat.openxml.2.10.1.nupkg.sha512",
     "C:\\Users\\Ciprian\\.nuget\\packages\\entityframework\\6.1.0\\entityframework.6.1.0.nupkg.sha512",

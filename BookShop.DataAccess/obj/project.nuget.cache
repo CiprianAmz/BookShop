@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i7zcoetc60xdgNd3BSDE/JcxGAZd84hrMGzyOM8EXsHv9STne1OM0iCmO1DoEovP8IcyjHY/faH8rqL6Qrr/eQ==",
+  "dgSpecHash": "0D0+1NPywdy0k0Ho4tSGZqOL+wmmINYeYYzMaG0W7Bv5CVpDXZAiXNWTv2WBZXKWMQl8Y0XQWJKctx30vnxpyg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.DataAccess\\BookShop.EFDataAccess.csproj",
+  "projectFilePath": "F:\\FacultyProjects\\BookShop\\BookShop.DataAccess\\BookShop.EFDataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ciprian\\.nuget\\packages\\entityframework\\6.1.0\\entityframework.6.1.0.nupkg.sha512",
     "C:\\Users\\Ciprian\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",

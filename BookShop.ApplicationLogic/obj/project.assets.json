@@ -7297,11 +7297,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj",
+      "projectUniqueName": "F:\\FacultyProjects\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj",
       "projectName": "BookShop.ApplicationLogic",
-      "projectPath": "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj",
+      "projectPath": "F:\\FacultyProjects\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj",
       "packagesPath": "C:\\Users\\Ciprian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.ApplicationLogic\\obj\\",
+      "outputPath": "F:\\FacultyProjects\\BookShop\\BookShop.ApplicationLogic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ciprian\\AppData\\Roaming\\NuGet\\NuGet.Config",

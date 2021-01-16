@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop\\BookShop.csproj": {}
+    "F:\\FacultyProjects\\BookShop\\BookShop\\BookShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj": {
+    "F:\\FacultyProjects\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj",
+        "projectUniqueName": "F:\\FacultyProjects\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj",
         "projectName": "BookShop.ApplicationLogic",
-        "projectPath": "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj",
+        "projectPath": "F:\\FacultyProjects\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj",
         "packagesPath": "C:\\Users\\Ciprian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.ApplicationLogic\\obj\\",
+        "outputPath": "F:\\FacultyProjects\\BookShop\\BookShop.ApplicationLogic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ciprian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -95,14 +95,14 @@
         }
       }
     },
-    "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.DataAccess\\BookShop.EFDataAccess.csproj": {
+    "F:\\FacultyProjects\\BookShop\\BookShop.DataAccess\\BookShop.EFDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.DataAccess\\BookShop.EFDataAccess.csproj",
+        "projectUniqueName": "F:\\FacultyProjects\\BookShop\\BookShop.DataAccess\\BookShop.EFDataAccess.csproj",
         "projectName": "BookShop.EFDataAccess",
-        "projectPath": "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.DataAccess\\BookShop.EFDataAccess.csproj",
+        "projectPath": "F:\\FacultyProjects\\BookShop\\BookShop.DataAccess\\BookShop.EFDataAccess.csproj",
         "packagesPath": "C:\\Users\\Ciprian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.DataAccess\\obj\\",
+        "outputPath": "F:\\FacultyProjects\\BookShop\\BookShop.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ciprian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -118,8 +118,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj": {
-                "projectPath": "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj"
+              "F:\\FacultyProjects\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj": {
+                "projectPath": "F:\\FacultyProjects\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj"
               }
             }
           }
@@ -184,14 +184,14 @@
         }
       }
     },
-    "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop\\BookShop.csproj": {
+    "F:\\FacultyProjects\\BookShop\\BookShop\\BookShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop\\BookShop.csproj",
+        "projectUniqueName": "F:\\FacultyProjects\\BookShop\\BookShop\\BookShop.csproj",
         "projectName": "BookShop",
-        "projectPath": "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop\\BookShop.csproj",
+        "projectPath": "F:\\FacultyProjects\\BookShop\\BookShop\\BookShop.csproj",
         "packagesPath": "C:\\Users\\Ciprian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop\\obj\\",
+        "outputPath": "F:\\FacultyProjects\\BookShop\\BookShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ciprian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -207,11 +207,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj": {
-                "projectPath": "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj"
+              "F:\\FacultyProjects\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj": {
+                "projectPath": "F:\\FacultyProjects\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj"
               },
-              "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.DataAccess\\BookShop.EFDataAccess.csproj": {
-                "projectPath": "C:\\Users\\Ciprian\\Desktop\\BookShop\\BookShop.DataAccess\\BookShop.EFDataAccess.csproj"
+              "F:\\FacultyProjects\\BookShop\\BookShop.DataAccess\\BookShop.EFDataAccess.csproj": {
+                "projectPath": "F:\\FacultyProjects\\BookShop\\BookShop.DataAccess\\BookShop.EFDataAccess.csproj"
               }
             }
           }

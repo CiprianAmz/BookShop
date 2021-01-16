@@ -34,3 +34,15 @@ C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\B
 C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.csproj.CopyComplete
 C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.dll
 C:\Users\Ciprian\Desktop\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.pdb
+F:\FacultyProjects\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.csprojAssemblyReference.cache
+F:\FacultyProjects\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.AssemblyInfoInputs.cache
+F:\FacultyProjects\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.AssemblyInfo.cs
+F:\FacultyProjects\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.csproj.CoreCompileInputs.cache
+F:\FacultyProjects\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.dll
+F:\FacultyProjects\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.pdb
+F:\FacultyProjects\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.EFDataAccess.deps.json
+F:\FacultyProjects\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.EFDataAccess.dll
+F:\FacultyProjects\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.EFDataAccess.pdb
+F:\FacultyProjects\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
+F:\FacultyProjects\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
+F:\FacultyProjects\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.csproj.CopyComplete

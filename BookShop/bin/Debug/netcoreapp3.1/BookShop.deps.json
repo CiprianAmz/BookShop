@@ -38,14 +38,6 @@
           "System.Drawing.Common": "4.7.0",
           "System.Drawing.Primitives": "4.3.0",
           "System.Net.Http": "4.3.4",
-          "System.Web.Abstractions": "3.5.0.0",
-          "System.Web.DynamicData.Design": "3.5.0.0",
-          "System.Web.DynamicData": "3.5.0.0",
-          "System.Web.Entity.Design": "3.5.0.0",
-          "System.Web.Entity": "3.5.0.0",
-          "System.Web.Extensions.Design": "3.5.0.0",
-          "System.Web.Extensions": "3.5.0.0",
-          "System.Web.Routing": "3.5.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies.Reference": "3.1.0.0",
@@ -2800,126 +2792,6 @@
         },
         "compile": {
           "BookShop.EFDataAccess.dll": {}
-        }
-      },
-      "System.Web.Abstractions/3.5.0.0": {
-        "runtime": {
-          "System.Web.Abstractions.dll": {
-            "assemblyVersion": "3.5.0.0",
-            "fileVersion": "3.5.30729.9141"
-          }
-        },
-        "compile": {
-          "System.Web.Abstractions.dll": {}
-        }
-      },
-      "System.Web.DynamicData.Design/3.5.0.0": {
-        "runtime": {
-          "System.Web.DynamicData.Design.dll": {
-            "assemblyVersion": "3.5.0.0",
-            "fileVersion": "3.5.30729.9141"
-          }
-        },
-        "compile": {
-          "System.Web.DynamicData.Design.dll": {}
-        }
-      },
-      "System.Web.DynamicData/3.5.0.0": {
-        "runtime": {
-          "System.Web.DynamicData.dll": {
-            "assemblyVersion": "3.5.0.0",
-            "fileVersion": "3.5.30729.9141"
-          }
-        },
-        "compile": {
-          "System.Web.DynamicData.dll": {}
-        }
-      },
-      "System.Web.Entity.Design/3.5.0.0": {
-        "runtime": {
-          "System.Web.Entity.Design.dll": {
-            "assemblyVersion": "3.5.0.0",
-            "fileVersion": "3.5.30729.9141"
-          }
-        },
-        "compile": {
-          "System.Web.Entity.Design.dll": {}
-        }
-      },
-      "System.Web.Entity/3.5.0.0": {
-        "runtime": {
-          "System.Web.Entity.dll": {
-            "assemblyVersion": "3.5.0.0",
-            "fileVersion": "3.5.30729.9141"
-          }
-        },
-        "compile": {
-          "System.Web.Entity.dll": {}
-        }
-      },
-      "System.Web.Extensions.Design/3.5.0.0": {
-        "runtime": {
-          "System.Web.Extensions.Design.dll": {
-            "assemblyVersion": "3.5.0.0",
-            "fileVersion": "3.5.30729.9141"
-          }
-        },
-        "compile": {
-          "System.Web.Extensions.Design.dll": {}
-        }
-      },
-      "System.Web.Extensions/3.5.0.0": {
-        "runtime": {
-          "System.Web.Extensions.dll": {
-            "assemblyVersion": "3.5.0.0",
-            "fileVersion": "3.5.30729.9141"
-          }
-        },
-        "compile": {
-          "System.Web.Extensions.dll": {}
-        }
-      },
-      "System.Web.Routing/3.5.0.0": {
-        "runtime": {
-          "System.Web.Routing.dll": {
-            "assemblyVersion": "3.5.0.0",
-            "fileVersion": "3.5.30729.9141"
-          }
-        },
-        "compile": {
-          "System.Web.Routing.dll": {}
-        }
-      },
-      "System.Data.Linq/3.5.0.0": {
-        "runtime": {
-          "System.Data.Linq.dll": {
-            "assemblyVersion": "3.5.0.0",
-            "fileVersion": "3.5.30729.9141"
-          }
-        }
-      },
-      "System.Data.Entity/3.5.0.0": {
-        "runtime": {
-          "System.Data.Entity.dll": {
-            "assemblyVersion": "3.5.0.0",
-            "fileVersion": "3.5.30729.9141"
-          }
-        }
-      },
-      "System.Data.Services.Client/3.5.0.0": {
-        "runtime": {
-          "System.Data.Services.Client.dll": {
-            "assemblyVersion": "3.5.0.0",
-            "fileVersion": "3.5.30729.9141"
-          }
-        }
-      },
-      "System.Data.Services.Design/3.5.0.0": {
-        "runtime": {
-          "System.Data.Services.Design.dll": {
-            "assemblyVersion": "3.5.0.0",
-            "fileVersion": "3.5.30729.9141"
-          }
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -5946,66 +5818,6 @@
     },
     "BookShop.EFDataAccess/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Web.Abstractions/3.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Web.DynamicData.Design/3.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Web.DynamicData/3.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Web.Entity.Design/3.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Web.Entity/3.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Web.Extensions.Design/3.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Web.Extensions/3.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Web.Routing/3.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Data.Linq/3.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Data.Entity/3.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Data.Services.Client/3.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Data.Services.Design/3.5.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
