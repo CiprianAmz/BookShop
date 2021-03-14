@@ -3280,6 +3280,8 @@
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.Data.SqlClient": "1.1.2",
           "Microsoft.EntityFrameworkCore.Relational": "3.1.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.4",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.2",
           "Microsoft.Extensions.Identity.Core": "3.1.4",
           "System.Drawing.Common": "4.7.0",
           "System.Drawing.Primitives": "4.3.0",
@@ -3297,8 +3299,10 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "BookShop.ApplicationLogic": "1.0.0",
+          "Microsoft.Data.SqlClient": "1.1.2",
           "Microsoft.EntityFrameworkCore": "3.1.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.4",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.2",
           "Microsoft.Extensions.Identity.Core": "3.1.4",
           "System.Drawing.Common": "4.7.0",
           "System.Drawing.Primitives": "4.3.0",
@@ -10120,6 +10124,7 @@
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 3.1.4",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.4",
       "Microsoft.AspNetCore.Identity.UI >= 3.1.4",
+      "Microsoft.Data.SqlClient >= 1.1.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.4",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.2",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.4",
@@ -10131,19 +10136,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ciprian\\.nuget\\packages\\": {}
+    "C:\\Users\\Cipri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\FacultyProjects\\BookShop\\BookShop\\BookShop.csproj",
+      "projectUniqueName": "C:\\Users\\Cipri\\OneDrive\\Documents\\GitHub\\BookShop\\BookShop\\BookShop.csproj",
       "projectName": "BookShop",
-      "projectPath": "F:\\FacultyProjects\\BookShop\\BookShop\\BookShop.csproj",
-      "packagesPath": "C:\\Users\\Ciprian\\.nuget\\packages\\",
-      "outputPath": "F:\\FacultyProjects\\BookShop\\BookShop\\obj\\",
+      "projectPath": "C:\\Users\\Cipri\\OneDrive\\Documents\\GitHub\\BookShop\\BookShop\\BookShop.csproj",
+      "packagesPath": "C:\\Users\\Cipri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Cipri\\OneDrive\\Documents\\GitHub\\BookShop\\BookShop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ciprian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Cipri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10155,12 +10160,13 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "F:\\FacultyProjects\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj": {
-              "projectPath": "F:\\FacultyProjects\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj"
+            "C:\\Users\\Cipri\\OneDrive\\Documents\\GitHub\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj": {
+              "projectPath": "C:\\Users\\Cipri\\OneDrive\\Documents\\GitHub\\BookShop\\BookShop.ApplicationLogic\\BookShop.ApplicationLogic.csproj"
             },
-            "F:\\FacultyProjects\\BookShop\\BookShop.DataAccess\\BookShop.EFDataAccess.csproj": {
-              "projectPath": "F:\\FacultyProjects\\BookShop\\BookShop.DataAccess\\BookShop.EFDataAccess.csproj"
+            "C:\\Users\\Cipri\\OneDrive\\Documents\\GitHub\\BookShop\\BookShop.DataAccess\\BookShop.EFDataAccess.csproj": {
+              "projectPath": "C:\\Users\\Cipri\\OneDrive\\Documents\\GitHub\\BookShop\\BookShop.DataAccess\\BookShop.EFDataAccess.csproj"
             }
           }
         }
@@ -10173,6 +10179,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "DocumentFormat.OpenXml": {
             "target": "Package",
@@ -10189,6 +10196,10 @@
           "Microsoft.AspNetCore.Identity.UI": {
             "target": "Package",
             "version": "[3.1.4, )"
+          },
+          "Microsoft.Data.SqlClient": {
+            "target": "Package",
+            "version": "[1.1.2, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
@@ -10243,7 +10254,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   },

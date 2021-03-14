@@ -46,3 +46,15 @@ F:\FacultyProjects\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookSho
 F:\FacultyProjects\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
 F:\FacultyProjects\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
 F:\FacultyProjects\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.csproj.CopyComplete
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.EFDataAccess.deps.json
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.EFDataAccess.dll
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.EFDataAccess.pdb
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.DataAccess\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.csprojAssemblyReference.cache
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.AssemblyInfoInputs.cache
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.AssemblyInfo.cs
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.csproj.CopyComplete
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.dll
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.DataAccess\obj\Debug\netstandard2.0\BookShop.EFDataAccess.pdb

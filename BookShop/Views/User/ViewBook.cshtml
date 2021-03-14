@@ -21,6 +21,7 @@
             <h4 align="center" style="color:black">@Model.Book.Name </h4>
             <h4 align="center" style="color:black">@Model.Book.Price $ </h4>
             <h4 align="center" style="color:black">Average ratings: @Model.Rating  </h4>
+            <h4 align="center" style="color:black">Description: @Model.Book.Description  </h4>
         </div>
         @if (User.IsInRole("User") || User.IsInRole("Admin"))
         {

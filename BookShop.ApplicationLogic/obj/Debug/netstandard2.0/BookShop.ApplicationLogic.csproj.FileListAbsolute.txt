@@ -42,3 +42,12 @@ F:\FacultyProjects\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\B
 F:\FacultyProjects\BookShop\BookShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.deps.json
 F:\FacultyProjects\BookShop\BookShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
 F:\FacultyProjects\BookShop\BookShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.deps.json
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.ApplicationLogic\bin\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.csprojAssemblyReference.cache
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.AssemblyInfoInputs.cache
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.AssemblyInfo.cs
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.csproj.CoreCompileInputs.cache
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.dll
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop.ApplicationLogic\obj\Debug\netstandard2.0\BookShop.ApplicationLogic.pdb
