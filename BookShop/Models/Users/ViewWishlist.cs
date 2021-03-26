@@ -8,7 +8,7 @@ namespace BookShop.Models.Users
 {
     public class ViewWishlist
     {
-        public IEnumerable<Order> Orders { get; set; }
+        public IEnumerable<ShoppingCart> Orders { get; set; }
         public IEnumerable<Book> Books { get; set; }
     }
 }

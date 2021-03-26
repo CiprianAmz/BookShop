@@ -20,11 +20,12 @@ namespace BookShop.ApplicationLogic.Services
         private IWishlistRepository wishlistRepository;
         private ICartRepository cartRepository;
         private IBillRepository billRepository;
+        private ICartItemRepository cartItemRepository;
         SignInManager<IdentityUser> signInManager;
         UserManager<IdentityUser> userManager;
         
 
-        public UserServices(IUserRepository userRepository, IBookRepository BookRepository, ICommentRepository commentRepository, IOrderRepository orderRepository, IRatingRepository ratingRepository, IWishlistRepository wishlistRepository, ICartRepository cartRepository, IBillRepository billRepository)
+        public UserServices(IUserRepository userRepository, IBookRepository BookRepository, ICommentRepository commentRepository, IOrderRepository orderRepository, IRatingRepository ratingRepository, IWishlistRepository wishlistRepository, ICartRepository cartRepository, IBillRepository billRepository, ICartItemRepository cartItemRepository)
         {
             this.userRepository = userRepository;
             this.BookRepository = BookRepository;
@@ -34,6 +35,7 @@ namespace BookShop.ApplicationLogic.Services
             this.wishlistRepository = wishlistRepository;
             this.cartRepository = cartRepository;
             this.billRepository = billRepository;
+            this.cartItemRepository = cartItemRepository;
         }
 
         public IEnumerable<Book> GetBookList()
@@ -56,7 +58,7 @@ namespace BookShop.ApplicationLogic.Services
             return orderRepository.GetOrderByUserId(orderIdGuid);
         }
 
-        public IEnumerable<ShoppingCart> GetCartById(string orderId)
+        public ShoppingCart GetCartById(string orderId)
         {
             Guid orderIdGuid = Guid.Empty;
             if (!Guid.TryParse(orderId, out orderIdGuid))
@@ -65,15 +67,26 @@ namespace BookShop.ApplicationLogic.Services
             }
             return cartRepository.GetCartByUserId(orderIdGuid);
         }
-        public ShoppingCart GetCartId(string orderId)
+        public ShoppingCart GetCartByUserId(string orderId)
         {
             Guid orderIdGuid = Guid.Empty;
             if (!Guid.TryParse(orderId, out orderIdGuid))
             {
                 throw new Exception("Invalid Guid Format");
             }
-            return cartRepository.GetCartByCartId(orderIdGuid);
+            return cartRepository.GetCartByUserId(orderIdGuid);
         }
+        public IEnumerable<CartItem> getCartByShoppingCartId(string Id)
+        {
+            Guid orderIdGuid = Guid.Empty;
+            if (!Guid.TryParse(Id, out orderIdGuid))
+            {
+                throw new Exception("Invalid Guid Format");
+            }
+            return cartItemRepository.GetCartByShoppingCartId(orderIdGuid);
+        }
+
+
         public Order GetOrderId(string orderId)
         {
             Guid orderIdGuid = Guid.Empty;
@@ -97,6 +110,7 @@ namespace BookShop.ApplicationLogic.Services
                             .AsEnumerable();
 
         }
+
         public IEnumerable<Book> GetBookbyGuid(Guid BookId)
         {
            
@@ -105,6 +119,8 @@ namespace BookShop.ApplicationLogic.Services
                             .AsEnumerable();
 
         }
+
+
 
         public void addOrder(String userId, Guid BookId)
         {
@@ -123,10 +139,10 @@ namespace BookShop.ApplicationLogic.Services
                 Date = DateTime.Today,
                 TotalValue = Book.Price,
                 BookId = Book.Id
-
             }) ; 
 
         }
+
         public void deleteOrder( string orderId)
         {
 
@@ -148,14 +164,14 @@ namespace BookShop.ApplicationLogic.Services
                 throw new Exception("Invalid Guid Format");
             }
             var user = userRepository.GetUserById(userIdGuid);
-            var Books = BookRepository.GetBookbyId(BookId);
+            var cart = cartRepository.GetCartByUserId(user.Id);
+            var Book = BookRepository.GetBookbyId(BookId);
 
-            cartRepository.Add(new ShoppingCart()
+            cartItemRepository.Add(new CartItem()
             {
                 Id = Guid.NewGuid(),
-                UserId = user.Id,
-                Quantity = 1,
-                BookId = Books.Id
+                ShoppingCartId = cart.Id,
+                BookId = Book.Id
             });
         }
         public void addWish(String userId, Guid BookId)
@@ -239,25 +255,23 @@ namespace BookShop.ApplicationLogic.Services
             return (avg / count);
         }
 
-        public void addBill(String userId, Guid BookId, String address, String phoneNumber, String cardNumber, String expirationDate, String cvv, int TotalValue)
+        public void addBill(String userId, String address, String phoneNumber, String cardNumber, String expirationDate, String cvv, float totalValue)
         {
             Guid userIdGuid = Guid.Empty;
             if (!Guid.TryParse(userId, out userIdGuid))
             {
                 throw new Exception("Invalid Guid Format");
             }
-            var Books = BookRepository.GetBookbyId(BookId);
             billRepository.Add(new Bill()
             {
                 Id = Guid.NewGuid(),
                 UserId = userIdGuid,
-                BookId = BookId,
                 Address = address,
                 PhoneNumber = phoneNumber,
                 CardNumber = cardNumber,
                 ExpirationDate = expirationDate,
                 CVV = cvv,
-                TotalValue = (int)Books.Price
+                TotalValue = (int)totalValue
             }); 
 
         }
@@ -272,16 +286,26 @@ namespace BookShop.ApplicationLogic.Services
             return billRepository.GetBillByUserId(billIdGuid);
         }
 
-        public void deleteCart(string cartId)
+        public void deleteCart(CartItem cart)
         {
-            var cart = GetCartId(cartId);
+            
             if (cart == null)
             {
 
             }
-            cartRepository.Delete(cart);
+
+            cartItemRepository.Delete(cart);
         }
 
+        public CartItem GetCartItemById(string orderId)
+        {
+            Guid orderIdGuid = Guid.Empty;
+            if (!Guid.TryParse(orderId, out orderIdGuid))
+            {
+                throw new Exception("Invalid Guid Format");
+            }
+            return cartItemRepository.GetCartById(orderIdGuid);
+        }
     }
 
 }

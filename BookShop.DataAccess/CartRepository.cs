@@ -22,9 +22,9 @@ namespace BookShop.EFDataAccess
             return dbContext.ShoppingCart.Where(a => a.Id == cartId).FirstOrDefault();
         }
 
-        public IEnumerable<ShoppingCart> GetCartByUserId(Guid userId)
+        public ShoppingCart GetCartByUserId(Guid userId)
         {
-            return dbContext.ShoppingCart.Where(a => a.UserId == userId).AsEnumerable();
+            return dbContext.ShoppingCart.Where(a => a.UserId == userId).FirstOrDefault();
         }
 
 

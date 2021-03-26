@@ -1,6 +1,9 @@
 ﻿@model BookShop.Models.Users.ViewCart
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
 @{
-    ViewData["Title"] = "ViewOrders";
+    ViewData["Title"] = "ViewCart";
 }
 
 <head>
@@ -8,24 +11,27 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link href="~/css/site.css" rel="stylesheet" />
 </head>
-<body >
+<body>
     <div class="row">
-        @foreach (var order in Model.Orders)
+        @foreach (var cart in Model.cartItems)
         {
-        <div class="product-caption">
-            @foreach (var Books in Model.Books)
+            @foreach (var Book in Model.Books)
             {
-                @if ((Books.Id == order.BookId) && (Books.Id.ToString() != "08b78362-f32e-42a8-8838-8e4c39fd3c30"))
-                {
-                    <img src="data:image/png;base64, @Books.ImageFile" width="350" height="500" alt="" class="center" />
-                    <h4 align="center"><a style="color:white" asp-controller="User" asp-action="ViewBooks" asp-route-id="@Books.Id">@Books.Name </a></h4>
-                    <a class="btn btn-danger" asp-controller="User" asp-action="DeleteCart" asp-route-id="@order.Id">Rremove from cart</a>
-                    <a class="btn btn-danger" asp-controller="User" asp-action="AddBill" asp-route-id="@Books.Id">Checkout</a>
+                   @if (cart.BookId == Book.Id)
+                   {
+                    <div class="product-caption">
 
+                        <img src="data:image/png;base64, @Book.ImageFile" width="350" height="500" alt="" class="center" />
+                        <h4 align="center"><a style="color:white" asp-controller="User" asp-action="ViewBook" asp-route-id="@Book.Id">@Book.Name </a></h4>
+                        <a class="btn btn-danger" asp-controller="User" asp-action="DeleteCart" asp-route-id="@cart.Id">Remove from cart</a>
+                    </div>
+                   }
                 }
-            }
-        </div>
-
         }
+
+    </div>
+    <div class="">
+        <h4 align="center" style="color:black">@Model.Value$ </h4>
+        <a align="center" class="btn btn-danger" asp-controller="User" asp-action="AddBill" asp-route-id="@UserManager.GetUserId(User).ToString()">Checkout</a>
     </div>
 </body>

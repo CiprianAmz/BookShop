@@ -18,7 +18,10 @@ namespace BookShop.EFDataAccess
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Rating> Ratings { get; set; }
         public DbSet<ShoppingCart> ShoppingCart { get; set; }
+
         public DbSet<Bill> Bills { get; set; }
+        public DbSet<CartItem> CartItem { get; set; }
+        public DbSet<BillBooks> BillBooks { get; set; }
     }
 }
 

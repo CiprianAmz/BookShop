@@ -25,11 +25,12 @@
                             </div>
                             @if (User.IsInRole("User") || User.IsInRole("Admin"))
                             {
-                                <h4 align="center">
-                                    <a align="center" class="btn btn-danger" asp-controller="User" asp-action="AddComment" asp-route-id="@Book.Id">AddComm  </a>
-                                    <a align="center" class="btn btn-danger" asp-controller="User" asp-action="AddRating" asp-route-id="@Book.Id">Rate Book   </a>
-                                    <a align="center" class="btn btn-danger" asp-action="AddOrder" asp-route-id="@Book.Id">Add Wishlist    </a>
-                                </h4>
+                        <h4 align="center">
+                            <a align="center" class="btn btn-danger" asp-controller="User" asp-action="AddComment" asp-route-id="@Book.Id">AddComm  </a>
+                            <a align="center" class="btn btn-danger" asp-controller="User" asp-action="AddRating" asp-route-id="@Book.Id">Rate Book   </a>
+                            <a align="center" class="btn btn-danger" asp-action="AddOrder" asp-route-id="@Book.Id">Add to Wishlist </a>
+                            <a align="center" class="btn btn-danger" asp-controller="User" asp-action="AddCart" asp-route-id="@Book.Id">Add to Cart</a>
+                        </h4>
                             }
                         </div>
                     </div>

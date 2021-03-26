@@ -20,17 +20,18 @@
         <div class="product-caption">
             <h4 align="center" style="color:black">@Model.Book.Name </h4>
             <h4 align="center" style="color:black">@Model.Book.Price $ </h4>
+            <h4 align="center" style="color:black">Descrition: @Model.Book.Description</h4>
             <h4 align="center" style="color:black">Average ratings: @Model.Rating  </h4>
-            <h4 align="center" style="color:black">Description: @Model.Book.Description  </h4>
         </div>
         @if (User.IsInRole("User") || User.IsInRole("Admin"))
         {
 
-            <h4 align="center">
-                <a align="center" class="btn btn-danger" asp-controller="User" asp-action="AddComment" asp-route-id="@Model.Book.Id">AddComm  </a>
-                <a align="center" class="btn btn-danger" asp-controller="User" asp-action="AddRating" asp-route-id="@Model.Book.Id">Rate Book   </a>
-                <a align="center" class="btn btn-danger" asp-action="AddOrder" asp-route-id="@Model.Book.Id">Order    </a>
-            </h4>
+    <h4 align="center">
+        <a align="center" class="btn btn-danger" asp-controller="User" asp-action="AddComment" asp-route-id="@Model.Book.Id">AddComm  </a>
+        <a align="center" class="btn btn-danger" asp-controller="User" asp-action="AddRating" asp-route-id="@Model.Book.Id">Rate Book   </a>
+        <a align="center" class="btn btn-danger" asp-action="AddOrder" asp-route-id="@Model.Book.Id">Add to Wishlist     </a>
+        <a align="center" class="btn btn-danger" asp-controller="User" asp-action="AddCart" asp-route-id="@Model.Book.Id">Add to Cart</a>
+    </h4>
         }
     </div>
     <div class="border border-dark" style="background-color:white">

@@ -8,7 +8,10 @@ namespace BookShop.Models.Users
 {
     public class ViewCart
     {
-        public IEnumerable<ShoppingCart> Orders { get; set; }
-        public IEnumerable<Book> Books { get; set; }
+        public IEnumerable<CartItem> cartItems { get; set; }
+        public IEnumerable<Book> Books { get; set; } 
+
+        public float Value { get; set; }
+
     }
 }

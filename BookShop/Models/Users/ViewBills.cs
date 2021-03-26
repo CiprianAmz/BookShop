@@ -9,6 +9,5 @@ namespace BookShop.Models.Users
     public class ViewBills
     {
         public IEnumerable<Bill> Bills { get; set; }
-        public IEnumerable<Book> Books { get; set; }
     }
 }

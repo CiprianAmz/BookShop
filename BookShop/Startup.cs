@@ -50,7 +50,9 @@ namespace BookShop
             services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IWishlistRepository, WishlistRepository>();
             services.AddScoped<IBillRepository, BillRepository>();
+            services.AddScoped<IBillBooksRepository, BillBooksRepository>();
             services.AddScoped<ICartRepository, CartRepository>();
+            services.AddScoped<ICartItemRepository, CartItemRepository>();
             services.AddScoped<AdminServices>();
             services.AddScoped<UserServices>();
             services.AddControllersWithViews();

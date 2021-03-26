@@ -7,7 +7,7 @@ namespace BookShop.ApplicationLogic.Abstractions
     public interface ICartRepository : IRepository<ShoppingCart>
     {
         ShoppingCart GetCartByCartId(Guid cartId);
-        IEnumerable<ShoppingCart> GetCartByUserId(Guid userId);
+        ShoppingCart GetCartByUserId(Guid userId);
         
     }
 }

@@ -37,16 +37,83 @@ namespace BookShop.Controllers
         {
             var order = userServices.GetOrderById(id);
             var Book = userServices.GetBookList();
-            var BookVM = new ViewOrders { Orders = order, Books = Book };
+            var BookVM = new ViewOrders {Orders = order, Books = Book };
             return View(BookVM);
         }
 
         public IActionResult ViewCart([FromRoute] string id)
         {
-            var carts = userServices.GetCartById(id);
+            var cart = userServices.GetCartByUserId(id);
+            var carts = userServices.getCartByShoppingCartId(cart.Id.ToString());
             var Books = userServices.GetBookList();
-            var BooksVM = new ViewCart { Orders = carts, Books = Books };
-            return View(BooksVM);
+            IList<Book> cartBooks = new List<Book>();
+            float value = 0;
+            foreach( var item in carts)
+            {
+                foreach (var Book in Books)
+                    if(item.BookId.ToString() == Book.Id.ToString())
+                    {
+                       cartBooks.Add(Book);
+                        value += Book.Price;
+                    }
+            }
+         
+            var BookVM = new ViewCart { cartItems = carts, Books = cartBooks.AsEnumerable(), Value = value};
+            return View(BookVM);
+        }
+        public IActionResult Checkout([FromRoute] string id)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+            var shoppingCart = userServices.GetCartByUserId(id);
+            var carts = userServices.getCartByShoppingCartId(shoppingCart.Id.ToString());
+            foreach( var cart in carts.ToList())
+            {
+                userServices.deleteCart(cart);
+            }
+            
+            return Redirect(Url.Action("Index", "User"));
+        }
+        [HttpPost]
+        public IActionResult AddBill([FromForm] AddBillModelView model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+            var userId = userManager.GetUserId(User);
+            userServices.addBill(userId, model.Address, model.PhoneNumber, model.CardNumber, model.ExpirationDate, model.CVV, model.TotalValue);
+            
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public IActionResult AddBill([FromRoute] string id)
+        {
+            var shoppingCart = userServices.GetCartByUserId(id);
+            var carts = userServices.getCartByShoppingCartId(shoppingCart.Id.ToString());
+            IList<Book> BookList = new List<Book>();
+            float value = 0;
+            var Books = userServices.GetBookList();
+            foreach(var Book in Books)
+            {
+                foreach(var cart in carts)
+                {
+                  if (Book.Id == cart.BookId)
+                    {
+                        BookList.Add(Book);
+                        value += Book.Price;
+                    }
+                }
+            }
+
+            var BookVM = new AddBillModelView { Address = null, CardNumber = null, PhoneNumber = null, CVV = null, ExpirationDate = null, TotalValue = value, BookList = BookList,CartItems = carts.ToList() };
+            foreach (var cart in carts.ToList())
+            {
+                userServices.deleteCart(cart);
+            }
+            return View(BookVM);
         }
 
         public IActionResult DeleteOrder([FromRoute] string id)
@@ -274,45 +341,31 @@ namespace BookShop.Controllers
 
         }
 
-        [HttpPost]
-        public IActionResult AddBill([FromForm] AddBillModelView model)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest();
-            }
-            var userId = userManager.GetUserId(User);
-            userServices.addBill(userId, model.BookId, model.Address, model.PhoneNumber, model.CardNumber,model.ExpirationDate, model.CVV,model.TotalValue);
-            return RedirectToAction("Index");
-        }
-        [HttpGet]
-        public IActionResult AddBill([FromRoute] string id)
-        {
-            var Books = userServices.GetBookbyId(id).Single();
-            var BooksVM = new AddBillModelView { Address = null, CardNumber = null, PhoneNumber = null, CVV = null, ExpirationDate = null, TotalValue = 0, BookId = Books.Id };
-            return View(BooksVM);
-        }
+        
 
 
         public IActionResult ViewBills([FromRoute] string id)
         {
             var bills = userServices.GetBillsByUserId(id);
-            var Books = userServices.GetBookList();
-            var BooksVM = new ViewBills { Bills = bills, Books = Books };
-            return View(BooksVM);
+            var BookVM = new ViewBills { Bills = bills};
+            return View(BookVM);
         }
 
-        public IActionResult DeleteCart([FromRoute] string id)
+        public IActionResult deleteCart([FromRoute] string id)
         {
-
             if (!ModelState.IsValid)
             {
                 return BadRequest();
             }
-            userServices.deleteCart(id);
+            var cart = userServices.GetCartItemById(id);
+
+            userServices.deleteCart(cart);
+
+
             return Redirect(Url.Action("Index", "User"));
         }
     }
+
 
 }
 

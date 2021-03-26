@@ -6,13 +6,16 @@
 
 <h1>Bill</h1>
 
-<h4>Books</h4>
+<h4>Book</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="AddBill" method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="BookId" />
+            @*<input type="hidden" asp-for="BookId" />*@
+            <input type="hidden" asp-for="BookList" />
+            <input type="hidden" asp-for="CartItems" />
+            <input type="hidden" asp-for="TotalValue" />
             <div class="form-group">
                 <label asp-for="Address" class="control-label"></label>
                 <input asp-for="Address" class="form-control" />
@@ -38,6 +41,9 @@
                 <label asp-for="CVV" class="control-label"></label>
                 <input asp-for="CVV" class="form-control" />
                 <span asp-validation-for="CVV" class="text-danger"></span>
+            </div>
+            <div>
+                <h4>TotalValue: @Model.TotalValue $</h4>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
