@@ -1,53 +1,21 @@
-﻿@model BookShop.Models.Users.UserSearchViewModel;
+﻿@model BookShop.Models.Users.SearchedListViewModel;
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "SearchedList";
 }
-
-@section Scripts {
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#postTitle").autocomplete({
-                source: '/user/search'
-            });
-        });
-    </script>
-}
-
 
 <head>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="~/css/site.css" />
 
 </head>
 <body>
-
+    <div class="titlupag1">Search results for : @Model.searchedWord </div>
     <div class="card-deck">
-        <div class="card split">
-            <div class="campSP">
-                <form asp-action="SearchedList" enctype="multipart/form-data">
-                    <input asp-for="searchedBook" class="form-control" type="search" placeholder="Predictive Search" aria-label="Search" aria-describedby="basic-addon1" id="postTitle">
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-deck">
-        <div class="card split">
-            <div class="campS">
-                <form asp-action="SearchedList" enctype="multipart/form-data">
-                    <input asp-for="searchedBook" class="form-control" type="search" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1" id="">
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="row">
         @foreach (var Book in Model.Books)
         {
-            @if ((Book.Id != Guid.Empty) && (Book.Stock != 0))
+            @if ((Book.Id != Guid.Empty) && (Book.Stock != 0) && Book.Name.ToLower().Contains(Model.searchedWord.ToLower()))
             {
+
                 <div class="col-xl-4 col-lg-4 col-md-6" style="border-style: groove;">
                     <div class="single-product mb-60">
                         <div class="product-img" style="border">
@@ -68,6 +36,8 @@
                         }
                     </div>
                 </div>
+
+
             }
         }
 

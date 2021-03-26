@@ -76,6 +76,19 @@ namespace BookShop.Controllers
             
             return Redirect(Url.Action("Index", "User"));
         }
+        public IActionResult deleteCart([FromRoute] string id)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+            var cart = userServices.GetCartItemById(id);
+
+            userServices.deleteCart(cart);
+
+
+            return Redirect(Url.Action("Index", "User"));
+        }
         [HttpPost]
         public IActionResult AddBill([FromForm] AddBillModelView model)
         {
@@ -133,7 +146,7 @@ namespace BookShop.Controllers
             try
             {        
                     var BookList = userServices.GetBookList();
-                    return View(new UserBookViewModel { Books = BookList });
+                    return View(new UserSearchViewModel { Books = BookList });
 
             }
             catch (Exception)
@@ -351,21 +364,44 @@ namespace BookShop.Controllers
             return View(BookVM);
         }
 
-        public IActionResult deleteCart([FromRoute] string id)
+        public IActionResult SearchedList([FromForm] UserSearchViewModel model)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest();
             }
-            var cart = userServices.GetCartItemById(id);
 
-            userServices.deleteCart(cart);
+            var thisSearchedWord = "";
+            if (model.searchedBook != null)
+            {
+                thisSearchedWord = model.searchedBook;
+            }
+            var BooksList = userServices.GetBookList();
 
-
-            return Redirect(Url.Action("Index", "User"));
+            var SearchedList = new SearchedListViewModel { Books = BooksList, searchedWord = thisSearchedWord };
+            return View(SearchedList);
         }
-    }
 
+        [RouteAttribute("user/search")]
+        [Produces("application/json")]
+        [HttpGet("search")]
+        public async Task<IActionResult> SearchProductPredictive()
+        {
+            try
+            {
+                string term = HttpContext.Request.Query["term"].ToString();
+                var searchedProduct = userServices.GetBookList().Where(p => p.Name.ToLower().Contains(term.ToLower()))
+                                            .Select(p => p.Name).ToList();
+                return Ok(searchedProduct);
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
+
+
+    }
 
 }
 
