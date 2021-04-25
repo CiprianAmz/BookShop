@@ -1220,3 +1220,4 @@ C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop\obj\Debug\netcoreapp3
 C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.pdb
 C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop\obj\Debug\netcoreapp3.1\BookShop.genruntimeconfig.cache
 C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\User\SearchedList.cshtml.g.cs
+C:\Users\Cipri\OneDrive\Documents\GitHub\BookShop\BookShop\obj\Debug\netcoreapp3.1\Razor\Views\User\SearchedListLucene.cshtml.g.cs

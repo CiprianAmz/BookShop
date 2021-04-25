@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.RegularExpressions;
 
 namespace BookShop.Controllers
 {
@@ -379,6 +380,71 @@ namespace BookShop.Controllers
             var BooksList = userServices.GetBookList();
 
             var SearchedList = new SearchedListViewModel { Books = BooksList, searchedWord = thisSearchedWord };
+
+            //string strCmdText;
+            //strCmdText = "/C C:/Users/Cipri/OneDrive/Documents/GitHub/Lucene/Lucene.jar Liviu";
+            //System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+
+            var proc1 = new System.Diagnostics.ProcessStartInfo();
+            string Command;
+            proc1.UseShellExecute = true;
+            Command = @"java -jar C:\Users\Cipri\OneDrive\Documents\GitHub\Lucene\Lucene.jar Faust";
+            proc1.WorkingDirectory = @"C:\Windows\System32";
+            proc1.FileName = @"C:\Windows\System32\cmd.exe";
+            /// as admin = proc1.Verb = "runas";
+            proc1.Arguments = "/c " + Command; // /k to show the console
+            proc1.WindowStyle = System.Diagnostics.ProcessWindowStyle.Maximized;
+            System.Diagnostics.Process.Start(proc1);
+
+            return View(SearchedList);
+        }
+
+        public IActionResult SearchedListLucene([FromForm] UserSearchViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            var proc1 = new System.Diagnostics.ProcessStartInfo();
+            string Command;
+            proc1.UseShellExecute = true;
+            Command = @"java -jar C:\Users\Cipri\OneDrive\Documents\GitHub\Lucene\Lucene.jar " + model.searchedBook;
+            proc1.WorkingDirectory = @"C:\Windows\System32";
+            proc1.FileName = @"C:\Windows\System32\cmd.exe";
+            /// as admin = proc1.Verb = "runas";
+            proc1.Arguments = "/c " + Command; // /k to show the console
+            proc1.WindowStyle = System.Diagnostics.ProcessWindowStyle.Maximized;
+            System.Diagnostics.Process.Start(proc1);
+
+            var BooksList = userServices.GetBookList();
+            System.Threading.Thread.Sleep(1000); // wait for lucene jar
+
+            string[] lines = System.IO.File.ReadAllLines(@"C:\Users\Cipri\OneDrive\Documents\GitHub\Lucene\result.txt");
+
+            var thisSearchedWord = "";
+
+            if (lines.Length != 0)
+            {
+                string pattern = @"\\(?<Words>[a-zA-Z]+)\.pdf";
+                Regex regex = new Regex(pattern, RegexOptions.ExplicitCapture);
+
+                if (regex.IsMatch(lines[0]))
+                {
+                    MatchCollection matches = regex.Matches(lines[0]);
+                    foreach (Match match in matches)
+                    {
+                        if (match.Groups["Words"].Success)
+                        {
+                            thisSearchedWord = match.Groups["Words"].Value;
+                        }
+                    }
+                }
+
+            }
+
+            var SearchedList = new SearchedListViewModel { Books = BooksList, searchedWord = thisSearchedWord };
+
             return View(SearchedList);
         }
 
