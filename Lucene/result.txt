@@ -1,0 +1,4 @@
+C:\Users\Cipri\OneDrive\Documents\GitHub\Lucene\forderToIndex\Ion.pdf
+C:\Users\Cipri\OneDrive\Documents\GitHub\Lucene\forderToIndex\Occident.pdf
+C:\Users\Cipri\OneDrive\Documents\GitHub\Lucene\forderToIndex\Faust.pdf
+C:\Users\Cipri\OneDrive\Documents\GitHub\Lucene\forderToIndex\Bonobo.pdf

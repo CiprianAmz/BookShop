@@ -422,28 +422,44 @@ namespace BookShop.Controllers
 
             string[] lines = System.IO.File.ReadAllLines(@"C:\Users\Cipri\OneDrive\Documents\GitHub\Lucene\result.txt");
 
-            var thisSearchedWord = "";
+            List<String> SearchedWords = new List<String>();
 
             if (lines.Length != 0)
             {
                 string pattern = @"\\(?<Words>[a-zA-Z]+)\.pdf";
                 Regex regex = new Regex(pattern, RegexOptions.ExplicitCapture);
 
-                if (regex.IsMatch(lines[0]))
+                foreach(var line in lines) 
                 {
-                    MatchCollection matches = regex.Matches(lines[0]);
-                    foreach (Match match in matches)
+                    if (regex.IsMatch(line))
                     {
-                        if (match.Groups["Words"].Success)
+                        MatchCollection matches = regex.Matches(line);
+                        foreach (Match match in matches)
                         {
-                            thisSearchedWord = match.Groups["Words"].Value;
+                            if (match.Groups["Words"].Success)
+                            {
+                                SearchedWords.Add(match.Groups["Words"].Value);
+                            }
                         }
                     }
                 }
-
             }
 
-            var SearchedList = new SearchedListViewModel { Books = BooksList, searchedWord = thisSearchedWord };
+            List<Book> searchResult = new List<Book>();
+
+            foreach (var book in BooksList)
+            {
+                foreach (var word in SearchedWords)
+                {
+                    if ((book.Id != Guid.Empty) && (book.Stock != 0) && book.Name.ToLower().Contains(word.ToLower()))
+                    {
+                        searchResult.Add(book);
+                        break;
+                    }
+                }
+            }
+
+            var SearchedList = new SearchedListLuceneViewModel { Books = searchResult, searchedWord = "", AscentingFlag = true };
 
             return View(SearchedList);
         }

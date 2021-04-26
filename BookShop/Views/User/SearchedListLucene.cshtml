@@ -1,4 +1,4 @@
-﻿@model BookShop.Models.Users.SearchedListViewModel;
+﻿@model BookShop.Models.Users.SearchedListLuceneViewModel;
 @{
     ViewData["Title"] = "SearchedList";
 }
@@ -13,9 +13,8 @@
     <div class="card-deck">
         @foreach (var Book in Model.Books)
         {
-            @if ((Book.Id != Guid.Empty) && (Book.Stock != 0) && Book.Name.ToLower().Contains(Model.searchedWord.ToLower()))
+            @if (Book != null)
             {
-
                 <div class="col-xl-4 col-lg-4 col-md-6" style="border-style: groove;">
                     <div class="single-product mb-60">
                         <div class="product-img" style="border">
@@ -36,10 +35,8 @@
                         }
                     </div>
                 </div>
-
-
+                }
             }
-        }
 
     </div>
 </body>
