@@ -381,21 +381,6 @@ namespace BookShop.Controllers
 
             var SearchedList = new SearchedListViewModel { Books = BooksList, searchedWord = thisSearchedWord };
 
-            //string strCmdText;
-            //strCmdText = "/C C:/Users/Cipri/OneDrive/Documents/GitHub/Lucene/Lucene.jar Liviu";
-            //System.Diagnostics.Process.Start("CMD.exe", strCmdText);
-
-            var proc1 = new System.Diagnostics.ProcessStartInfo();
-            string Command;
-            proc1.UseShellExecute = true;
-            Command = @"java -jar C:\Users\Cipri\OneDrive\Documents\GitHub\Lucene\Lucene.jar Faust";
-            proc1.WorkingDirectory = @"C:\Windows\System32";
-            proc1.FileName = @"C:\Windows\System32\cmd.exe";
-            /// as admin = proc1.Verb = "runas";
-            proc1.Arguments = "/c " + Command; // /k to show the console
-            proc1.WindowStyle = System.Diagnostics.ProcessWindowStyle.Maximized;
-            System.Diagnostics.Process.Start(proc1);
-
             return View(SearchedList);
         }
 
@@ -447,9 +432,9 @@ namespace BookShop.Controllers
 
             List<Book> searchResult = new List<Book>();
 
-            foreach (var book in BooksList)
+            foreach (var word in SearchedWords)
             {
-                foreach (var word in SearchedWords)
+                foreach (var book in BooksList)
                 {
                     if ((book.Id != Guid.Empty) && (book.Stock != 0) && book.Name.ToLower().Contains(word.ToLower()))
                     {
@@ -459,7 +444,40 @@ namespace BookShop.Controllers
                 }
             }
 
-            var SearchedList = new SearchedListLuceneViewModel { Books = searchResult, searchedWord = "", AscentingFlag = true };
+            SessionSavedBooks sessionSaved = SessionSavedBooks.getInstance();
+            sessionSaved.setBooks(searchResult);
+
+            var SearchedList = new SearchedListLuceneViewModel { Books = searchResult, searchedWord = model.searchedBook, AscentingFlag = true };
+
+            return View(SearchedList);
+        }
+
+        public IActionResult AscendingLucene([FromForm] SearchedListLuceneViewModel model)
+        {
+            List<Book> books = SessionSavedBooks.getInstance().getBooks();
+
+            if(!model.AscentingFlag)
+            {
+                books.Reverse();
+            }
+
+            SessionSavedBooks.getInstance().setBooks(books);
+            var SearchedList = new SearchedListLuceneViewModel { Books = books, searchedWord = "", AscentingFlag = true };
+
+            return View(SearchedList);
+        }
+
+        public IActionResult DescendingLucene([FromForm] SearchedListLuceneViewModel model)
+        {
+            List<Book> books = SessionSavedBooks.getInstance().getBooks();
+
+            if (model.AscentingFlag)
+            {
+                books.Reverse();
+            }
+
+            SessionSavedBooks.getInstance().setBooks(books);
+            var SearchedList = new SearchedListLuceneViewModel { Books = books, searchedWord = "", AscentingFlag = false };
 
             return View(SearchedList);
         }

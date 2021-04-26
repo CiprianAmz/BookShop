@@ -10,15 +10,16 @@
 </head>
 <body>
     <div class="titlupag1">Search results: </div>
-        <input type="hidden" value="true" asp-for="@Model.AscentingFlag" />
+
+    <form asp-action="AscendingLucene">
+        <input type="hidden" value="false" asp-for="@Model.AscentingFlag" />
 
         <div class="form-group">
-            <input type="submit" value="Descending" class="btn btn-primary" />
+            <input type="submit" value="Ascending" class="btn btn-primary" />
         </div>
     </form>
 
     <div class="card-deck">
-
 
         @foreach (var Book in Model.Books)
         {
